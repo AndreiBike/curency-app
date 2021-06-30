@@ -1,0 +1,36 @@
+.date-input {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.start-date-block{
+    text-align: center;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+} 
+
+.end-date-block{
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+.start-date-block label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.end-date-block label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.date-input input{
+    width: 120px;
+    font-size: 12px;
+} 

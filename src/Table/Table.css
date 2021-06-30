@@ -1,0 +1,21 @@
+.table {
+    margin: 0 auto;
+}
+
+.table table{
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+.table table th, td{
+    border: 1px solid black;
+}
+
+.table-buttons {
+    padding-bottom: 10px;
+}
+
+.table-buttons button{
+    width: 50px;
+    margin: 0 10px;
+}

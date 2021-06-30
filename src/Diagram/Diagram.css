@@ -1,0 +1,8 @@
+.diagram {
+    margin: 30px auto;
+    max-width: 800px;
+}    
+
+.diagram canvas {
+    width: 100%;
+}

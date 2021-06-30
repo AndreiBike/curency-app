@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Diagram from "./Diagram/Diagram";
+import Currency from "./Currency/Currency";
+import DataSelector from "./Data/DataSelector";
+import { Provider } from "react-redux";
+import { useState } from "react";
+import reduxStore from "./ReduxStore/ReduxStore";
+import Table from "./Table/Table";
+import "./App.css";
 
 function App() {
+  const [isTableMode, changeMode] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <Provider store={reduxStore}>
+      <div className="App">
+        <h2> Hallo World </h2>
+        <DataSelector />
+        <button
+          onClick={() => {
+            changeMode(!isTableMode);
+          }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          {isTableMode ? "Table mode" : "Diagram mode"}{" "}
+        </button>
+        {isTableMode ? (
+          <Table />
+        ) : (
+          <>
+            {" "}
+            <Currency /> <Diagram />{" "}
+          </>
+        )}
+      </div>
+    </Provider>
   );
 }
 

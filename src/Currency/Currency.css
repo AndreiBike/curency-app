@@ -1,0 +1,18 @@
+.currency{
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+    border-bottom: 1px solid #efefef;
+}
+
+.currency label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.currency select{
+    margin-bottom: 10px;
+    width: 120px;
+}
